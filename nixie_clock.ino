@@ -710,7 +710,6 @@ void setup() {
 }
 
 void set_brightness() {
-  read_time();
   // Check if it is DND (Do Not Disturb) hours
   if (((DND_BEGIN_HOUR == DND_END_HOUR) and (DND_BEGIN_HOUR == current_hour)) or                                      // 23 - 23
      ((DND_BEGIN_HOUR < DND_END_HOUR)  and ((DND_BEGIN_HOUR <= current_hour) and (current_hour < DND_END_HOUR))) or   // 1 - 6, 21-23
