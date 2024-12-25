@@ -714,7 +714,7 @@ void set_brightness() {
   // Check if it is DND (Do Not Disturb) hours
   if (((DND_BEGIN_HOUR == DND_END_HOUR) and (DND_BEGIN_HOUR == current_hour)) or                                      // 23 - 23
      ((DND_BEGIN_HOUR < DND_END_HOUR)  and ((DND_BEGIN_HOUR <= current_hour) and (current_hour < DND_END_HOUR))) or   // 1 - 6, 21-23
-     ((DND_BEGIN_HOUR > DND_END_HOUR)  and ((current_hour >= DND_BEGIN_HOUR) or (current_hour < DND_END_HOUR)))       // 23 - 7, 21-0
+     ((DND_BEGIN_HOUR > DND_END_HOUR)  and ((DND_BEGIN_HOUR <= current_hour) or (current_hour < DND_END_HOUR)))       // 23 - 7, 21-0
   ) {
     // DND
     matrix.setBrightness(MATRIX_BRIGHTNESS_DND);
