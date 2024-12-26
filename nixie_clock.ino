@@ -12,8 +12,8 @@ constexpr uint8_t DND_END_HOUR = 7;
 
 constexpr uint8_t MATRIX_BRIGHTNESS = 255;
 constexpr uint8_t DOT_BRIGHTNESS = 50;
-constexpr uint8_t MATRIX_BRIGHTNESS_DND = 10;
-constexpr uint8_t DOT_BRIGHTNESS_DND = 1;
+constexpr uint8_t MATRIX_BRIGHTNESS_DND = 1;
+constexpr uint8_t DOT_BRIGHTNESS_DND = 0;
 
 // Uncomment the line below to source time from an MCU circuit rather than RTC.
 // Use one having best precision in hardware.
